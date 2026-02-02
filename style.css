@@ -1,0 +1,87 @@
+/* two-column responsive grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@font-face {
+  font-family: myFont; /* set name */
+  src: url(Canterbury.ttf); /* url of the font */
+}
+
+body {
+  background-color: rgb(0,29,66);
+}
+
+.page-title {
+  font-size: 80px;
+  font-weight: 800;
+  font-family: myFont;
+  margin-bottom: 28px;
+  color: #ffd700;
+  text-align: center;
+}
+
+/* card */
+.card {
+  padding: 18px;
+  border-radius: 14px;
+  background: #812935;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+
+.title {
+  font-size: 50px;
+  color: #ffd700;
+  font-family: myFont;
+  margin-bottom: 10px;
+  text-align: center;
+  opacity: .8;
+}
+
+/* bar layout */
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100px;
+}
+
+.bar {
+  flex: 1;
+  height: 70px;
+  background: #2a2a2a;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+/* filled region */
+.fill {
+  height: 100%;
+  /* background: linear-gradient(90deg, #6366f1, #4f46e5); */
+  background: #d7cac1;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  white-space: nowrap;
+}
+
+/* text inside fill */
+.winner {
+  font-size: 26px;
+  font-weight: 600;
+  color: black;
+  font-family: myFont;
+}
+
+/* percentage outside */
+.percent {
+  width: 42px;
+  text-align: right;
+  font-weight: 700;
+  font-family: myFont;
+  font-size: 26px;
+  color: #d7cac1;
+}
