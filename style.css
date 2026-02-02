@@ -3,6 +3,10 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  max-width: 800px;   /* mobile-like width cap */
+  margin: 0 auto;     /* center on desktop */
+  width: 100%;
+
 }
 
 @font-face {
@@ -85,3 +89,4 @@ body {
   font-size: 26px;
   color: #d7cac1;
 }
+
